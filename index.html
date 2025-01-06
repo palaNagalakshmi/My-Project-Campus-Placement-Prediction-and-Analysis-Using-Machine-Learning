@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Placement</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[type="text"]{
+            width: 87%;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+        }
+        input[type="submit"]{
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Information</h1>
+    <form method="POST" action="/add">
+        <label for="Age">Age:</label>
+        <input type="text" id="Age" name="Age" required><br><br>
+
+        <label for="Gender">Gender :</label>
+        <input type="text" id="Gender" name="Gender" required><br><br>
+
+        <label for="Stream">Stream :</label>
+        <input type="text" id="Stream" name="Stream" required><br><br>
+
+        <label for="Intership">intership:</label>
+        <input type="text" id="Intership" name="Intership" required><br><br>
+
+        <label for="Btech_CGPA">Btech_CGPA:</label>
+        <input type="text" id="Btech_CGPA" name="Btech_CGPA" required><br><br>
+
+        <label for="SSLC_Percentage">SSLC_Percentage:</label>
+        <input type="text" id="SSLC_Percentage" name="SSLC_Percentage" required><br><br>
+
+        <label for="PUC_Percentage">PUC_Percentage:</label>
+        <input type="text" id="PUC_Percentage" name="PUC_Percentage" required><br><br>
+
+        <label for="">HistoryOfBacklogs:</label>
+        <input type="text" id="HistoryOfBacklogs" name="HistoryOfBacklogs" required><br><br>
+
+        <label for="">Hostel:</label>
+        <input type="text" id="Hostel" name="Hostel" required><br><br>
+        
+        <input type="submit" value="Submit">        
+    </form>
+</body>
+</html>
